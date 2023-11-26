@@ -8,8 +8,8 @@ async function deletar(id, eventos, setEventos) {
 
 
 
-        //const eventosAtualizado = eventos.filter(evento => evento.id !== id);
-        //setEventos(eventosAtualizado);
+        const eventosAtualizado = eventos.filter(evento => evento.id !== id);
+        setEventos(eventosAtualizado);
         Alert.alert('Sucesso', 'Game deletado com sucesso!');
     } catch (error) {
         console.log(error)
