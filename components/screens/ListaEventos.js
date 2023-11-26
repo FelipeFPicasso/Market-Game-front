@@ -64,7 +64,7 @@ function ListaEventos({ navigation }) {
                 renderItem={({ item, index }) => {
                     const corItem = CORES[index % CORES.length];
                     return (
-                        <TouchableOpacity onPress={() => CriarEvento(item)}
+                        <TouchableOpacity onPress={() => editarEvento(item)}
                             onLongPress={() => { deletarEvento(item, eventos, setEventos) }}>
                             <View style={{ ...styles.itemContainer, backgroundColor: corItem }}>
                                 <Text style={styles.itemTitle}>{item.name}</Text>
