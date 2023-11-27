@@ -8,8 +8,8 @@ export default StyleSheet.create({
     },
 
     imagem: {
-        width: 150,
-        height: 150,
+        width: 120,
+        height: 120,
         resizeMode: 'cover',
       },
 

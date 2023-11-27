@@ -9,6 +9,7 @@ export default StyleSheet.create({
         borderRadius: 5, 
         color: 'black',
         border: 'none',
+        marginTop: 45,
         
         marginBottom: 16,
         padding: 16,
@@ -34,5 +35,10 @@ export default StyleSheet.create({
         color: '#b1cbba',
         textAlign: 'center',
     },
+    navbar_game:{
+        flexDirection: 'row', 
+        justifyContent: 'space-between',
+    },
+
     
 });

@@ -6,6 +6,7 @@ import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native';
 import { deletarEvento } from './deletar/DeletarEvento';
 import Button from '../button/Button';
 import criarEvento from './criar/CriarEvento';
+import style from '../button/style';
 
 
 
@@ -54,21 +55,12 @@ function ListaEventos({ navigation }) {
 
     return (
         <View style={styles.container}>
-
-            
-      
-            <View style={{flexDirection: 'row', justifyContent: 'space-between',}}>
-
-            <View><Image source={require('../../assets/Image.png')}
-                style={styles.imagem}/></View>
-            <View style={{marginTop: 80}}><Button label="Create" onPress={() => CriarEvento()} /></View>
-            
-
-            
-                
-                
-                
+            <View style={style.navbar_game}>
+                <View><Image source={require('../../assets/Image.png')}
+                    style={styles.imagem}/></View>
+                <View><Button label="Create" onPress={() => CriarEvento()} /></View>
             </View>
+
             <FlatList
                 data={eventos}
                 keyExtractor={item => item.id.toString()}
@@ -88,8 +80,6 @@ function ListaEventos({ navigation }) {
             />
         </View>
     );
-
-
 }
 
 export default ListaEventos;
