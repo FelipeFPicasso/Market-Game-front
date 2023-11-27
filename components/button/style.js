@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     button: {
-        
+        alignSelf: 'flex-end',
         textAlign: "center",
         width: 100,
         padding: 10,
@@ -13,13 +13,13 @@ export default StyleSheet.create({
         marginBottom: 16,
         padding: 16,
         borderRadius: 10,
-        backgroundColor: '#F5DEB3',
+        backgroundColor: '#698e76',
         shadowColor: "#000", //shadow para adcionar
         shadowOffset: { //um efeito sombreado abaixo do item
-            width: 5,
+            width: -5,
             height: 2,
         },
-        shadowOpacity: 0.25,
+        shadowOpacity: 0.20,
         shadowRadius: 3.84,
         elevation: 5,
 
@@ -31,7 +31,8 @@ export default StyleSheet.create({
     text: {
         fontSize: 15,
         fontWeight: 'bold',
-        color: '#374a67',
+        color: '#b1cbba',
         textAlign: 'center',
     },
+    
 });

@@ -11,7 +11,7 @@ const token = {
     id: 75, 
     email: "felipeNovo@email.com",
     password: 12345,
-    token : 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3NSIsImV4cCI6NjcwMDk2Mjk5Mn0.Fiobfr7H_IbSqNAceJwuayHZ2ISBr2eMr0vfb2K4PwNqP5EOB10oILtUtg-_D6s1XiLGAiZVkeNWThmpiq7sDQ'
+    token : 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3NSIsImV4cCI6NjcwMTEwOTAwOX0.xVftA-mCJyrvVzs3ZZO2P7BUyj_aDBuOv6gAbpcKHe8bbSitFe9XqeFURYd30J_tZHy4ABPK_g0IUn6SnK2cUQ'
 };
 
 const headers = {

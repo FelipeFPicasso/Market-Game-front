@@ -6,6 +6,13 @@ export default StyleSheet.create({
         backgroundColor: '#eef2f9',
         
     },
+
+    imagem: {
+        width: 150,
+        height: 150,
+        resizeMode: 'cover',
+      },
+
     containerButton: {
         textAlign: 'right',
         flex: 1,
@@ -28,7 +35,8 @@ export default StyleSheet.create({
     }, //um efeito de elevação, se destacando na tela
     itemDate: {
         fontSize: 12,
-        color: '#8a9bb2',
+        color: '#9b9b9b',
+        //color: '#98FB98',
         alignSelf: 'flex-end'
     }, // alinhando a data a direita do container
     itemTitle: {
@@ -37,10 +45,12 @@ export default StyleSheet.create({
         marginBottom: 8,
         marginTop: 8,
         color: '#374a67',
+        //color: 'whi000te'
     },
     itemDescription: {
         fontSize: 14,
         color: '#6b7c93'
+        //color: 'white'
     },
     itemButton: {
         width: 100,

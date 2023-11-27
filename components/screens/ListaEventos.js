@@ -2,7 +2,7 @@ import styles from './style';
 import { useFocusEffect } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react';
 import { fetchEventos } from '../../services/eventoService';
-import { View, Text, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity, Image } from 'react-native';
 import { deletarEvento } from './deletar/DeletarEvento';
 import Button from '../button/Button';
 import criarEvento from './criar/CriarEvento';
@@ -11,7 +11,8 @@ import criarEvento from './criar/CriarEvento';
 
 
 
-const CORES = ['#FFADAD', '#FFD6A5', '#FDFFB6', '#CAFFBF', '#9BF6FF', '#A0C4FF', '#BDB2FF', '#FFC6FF'];
+//const CORES = ['#FFADAD', '#FFD6A5', '#FDFFB6', '#CAFFBF', '#9BF6FF', '#A0C4FF', '#BDB2FF', '#FFC6FF'];
+const CORES = ['#9bd3ae', '#a3ffac'];
 
 function ListaEventos({ navigation }) {
     const [eventos, setEventos] = useState([]);
@@ -49,13 +50,23 @@ function ListaEventos({ navigation }) {
                 <button style={styles.smallButton}>Criar</button>
             </div> */
 
-
+//<Image source={require('../../assets/image-removebg-preview.png')}/>
 
     return (
         <View style={styles.container}>
+
             
-            <View >
-                <Button label="Create" onPress={() => CriarEvento()} />
+      
+            <View style={{flexDirection: 'row', justifyContent: 'space-between',}}>
+
+            <View><Image source={require('../../assets/Image.png')}
+                style={styles.imagem}/></View>
+            <View style={{marginTop: 80}}><Button label="Create" onPress={() => CriarEvento()} /></View>
+            
+
+            
+                
+                
                 
             </View>
             <FlatList
